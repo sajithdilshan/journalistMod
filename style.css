@@ -1,0 +1,577 @@
+/*
+Theme Name: JournalistMod
+Theme URI: http://code42.x10.com/journalistmod
+Description: JournalistMod is a minimal theme inspired by the Journalist theme by Lucian E. Marin.
+Version: 0.1
+Author: Sajith Dilshan
+Tags: white, two columns, fixed width, light, minimal, microformats
+For the WordPress community (GPL), enjoy it guys.
+by Sajith Dilshan | http://code42.x10.com */
+
+body {
+font-family:"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+font-size:14px;
+color:#222;
+line-height:1.7em;
+background:#fff url(images/bg.png) repeat left top;
+-webkit-font-smoothing:antialiased;
+margin:0;
+padding:5px;
+}
+
+* {
+margin:0;
+padding:2px;
+}
+
+a {
+color:#047;
+text-decoration:none;
+}
+
+#headcontainer {
+width:985px;
+position:relative;
+margin:0 auto;
+}
+
+#headcontainer h1 {
+font-size:50px;
+font-weight:bold;
+letter-spacing:-1px;
+text-shadow:0 2px 1px #fff;
+width:985px;
+margin:0 auto;
+padding:32px 0 25px;
+}
+
+#container {
+width:985px;
+position:relative;
+margin:0 auto;
+}
+
+#container h1 {
+font-size:40px;
+font-weight:bold;
+letter-spacing:-1px;
+width:600px;
+padding:32px 0 25px;
+}
+
+.post {
+-moz-background-clip:padding;
+-webkit-background-clip:padding-box;
+background:padding-box;
+-webkit-box-shadow:0 0 20px #DDD;
+-moz-box-shadow:0 0 20px #DDD;
+box-shadow:0 0 20px #DDD;
+background:#ffffff;
+background:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+background:-webkit-linear-gradient(top,#ffffff,#ffffff);
+background:-moz-linear-gradient(top, #ffffff, #ffffff);
+background:-ms-linear-gradient(top,#ffffff,#ffffff);
+background:-o-linear-gradient(top,#ffffff,#ffffff);
+background:linear-gradient(tobottom,#ffffff,#ffffff);
+margin-bottom:30px;
+padding:20px 20px 2px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+text-shadow:0 1px 0 #eee;
+}
+
+/*pre,code {
+width:650px;
+font:12px 'Monaco', Courier, Fixed, monospace;
+margin: 15px 10px 15px 0px;
+color:#DDD;
+background:#fff url('/images/noise.png') left top;
+-webkit-box-shadow:0 0 20px #eee;
+-moz-box-shadow:0 0 20px #eee;
+box-shadow:0 0 20px #eee;
+overflow:auto;
+text-align:left;
+line-height:1em;
+margin:1em 0;
+padding:0 20px 0 30px;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}*/
+
+#content {
+float:left;
+width:750px;
+}
+
+#content h2 {
+font-size:25px;
+margin:5px 0 4px;
+}
+
+#content h2.archive {
+font-weight:normal;
+font-size:22px;
+color:#1c1c1c;
+border:none;
+text-align:left;
+margin:5px 0 20px;
+padding:0;
+}
+
+.comments {
+color:#333;
+margin:0 0 15px;
+}
+
+.comments a {
+background:#fff;
+color:#333;
+font-size:11px;
+text-decoration:none;
+padding:0 7px 5px 0;
+}
+
+.navigation {
+font-size:11px;
+-moz-background-clip:padding;
+-webkit-background-clip:padding-box;
+background:padding-box;
+-webkit-box-shadow:0 0 20px #DDD;
+-moz-box-shadow:0 0 20px #DDD;
+box-shadow:0 0 20px #DDD;
+background:#ffffff;
+background:-webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+background:-webkit-linear-gradient(top,#ffffff,#ffffff);
+background:-moz-linear-gradient(top, #ffffff, #ffffff);
+background:-ms-linear-gradient(top,#ffffff,#ffffff);
+background:-o-linear-gradient(top,#ffffff,#ffffff);
+background:linear-gradient(tobottom,#ffffff,#ffffff);
+margin:0 0 20px;
+padding:5px 10px;
+border-radius:1px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+}
+
+.archive_cat{
+  float: left;
+}
+.archive_post{
+  float: right;
+}
+
+.main h3 {
+font-size:16px;
+font-weight:normal;
+margin:0 0 15px;
+}
+
+.main img,.main a img,.main a:hover img {
+border:0 none;
+text-decoration:none;
+}
+
+.main p {
+margin:0 0 15px;
+}
+
+.main ol,.main ul {
+line-height:18px;
+margin:0 0 15px 30px;
+}
+
+.main ul li ul,.main ol li ol {
+margin:5px 0 5px 30px;
+}
+
+.signature {
+float:left;
+border-right:#bbb 1px solid;
+width:200px;
+padding:0 15px 0 0;
+}
+
+.tags {
+float:left;
+width:440px;
+padding:0 0 0 15px;
+}
+
+#sidebar {
+font-size:12px;
+float:right;
+width:190px;
+-moz-box-shadow:0 0 8px #DDDDDD;
+-webkit-box-shadow:0 0 8px #DDDDDD;
+box-shadow:0 0 8px #DDDDDD;
+text-shadow:0 1px 0 #eee;
+border-bottom:2px solid #dfdfd9;
+margin:0 0 20px;
+padding:0 5px 20px 10px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+}
+
+#sidebar h3 {
+font-size:14px;
+margin:20px 0 5px;
+}
+
+#sidebar ul {
+list-style:none;
+}
+
+#author h3 {
+margin:5px 0;
+}
+
+#searchform {
+margin:15px 0 0;
+}
+
+#searchform input {
+margin:2px 0;
+}
+
+#searchform #s {
+background:#f6f6f6;
+font-size:11px;
+border:#aaa 1px solid;
+color:#222;
+margin:2px 0;
+padding:2px 4px;
+}
+
+#searchform #s:hover {
+cursor:text;
+}
+
+input.searchfield {
+background:#f6f6f6;
+font-size:11px;
+display:block;
+border:#aaa 1px solid;
+color:#222;
+margin:5px 0 8px;
+padding:2px 4px;
+width:170px;
+}
+
+input.searchfield:hover {
+background:#eee;
+color:#222;
+}
+
+input.submit,input[type=submit] {
+border:1px solid #a9a9a9;
+-webkit-border-top-colors:#a9a9a9 #fff;
+-webkit-border-right-colors:#a9a9a9 #fff;
+-webkit-border-bottom-colors:#a9a9a9 #fff;
+-webkit-border-left-colors:#a9a9a9 #fff;
+-moz-border-top-colors:#a9a9a9 #fff;
+-moz-border-right-colors:#a9a9a9 #fff;
+-moz-border-bottom-colors:#a9a9a9 #fff;
+-moz-border-left-colors:#a9a9a9 #fff;
+border-top-colors:#a9a9a9 #fff;
+border-right-colors:#a9a9a9 #fff;
+border-bottom-colors:#a9a9a9 #fff;
+border-left-colors:#a9a9a9 #fff;
+font:normal 11px!important;
+color:#5a5a5a;
+text-decoration:none;
+text-shadow:0 0 2px #c0c0c0, 0 1px 0 #f0f0f0;
+background:#ededed;
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefefe), to(#e7e7e7), color-stop(.05,#fbfbfb), color-stop(.95,#dedede));
+background:-moz-linear-gradient(top, #fefefe, #fbfbfb 5%, #dedede 95%, #e7e7e7 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF,endColorstr=#dedede);
+-ms-filter:"progid:DXImageTransformansform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#dedede)";
+-webkit-box-shadow:0 0 1px #afafaf;
+-moz-box-shadow:0 0 1px #afafaf;
+box-shadow:0 0 1px #afafaf;
+margin:0;
+padding:2px 5px;
+border-radius:2px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+}
+
+input.submit:hover,input[type=submit]:hover {
+color:#34444e;
+text-shadow:0 0 2px #d2dde6, 0 1px 0 #e6edf3;
+background:#d4e0eb;
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f7fb), to(#cfdbe6), color-stop(.05,#e9f1f7), color-stop(.95,#bdcedd));
+background:-moz-linear-gradient(top, #f1f7fb, #e9f1f7 5%, #bdcedd 95%, #cfdbe6 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#E9F1F7,endColorstr=#bdcedd);
+-ms-filter:"progid:DXImageTransformansform.Microsoft.gradient(startColorstr=#E9F1F7, endColorstr=#bdcedd)";
+border-color:#9cabb6;
+}
+
+input.subcom {
+background:#eee;
+font-size:11px;
+border:#888 1px solid;
+color:#222;
+margin:0 0 10px;
+padding:1px 4px 2px;
+}
+
+input.subcom:hover {
+background:#222;
+cursor:pointer;
+border:#888 1px solid;
+color:#eee;
+}
+
+input.comment {
+background:#f6f6f6;
+font-size:11px;
+border:#aaa 1px solid;
+color:#222;
+padding:2px 4px;
+}
+
+textarea {
+background:#f6f6f6;
+font-size:12px;
+width:400px;
+border:#aaa 1px solid;
+color:#222;
+padding:2px 4px;
+}
+
+.postinput small {
+font-size:11px;
+margin:0 0 0 5px;
+}
+
+h3.reply {
+font-size:15px;
+margin:0 0 10px;
+}
+
+.nocomments {
+margin:0 0 30px;
+}
+
+ol.commentlist {
+font-size:12px;
+list-style:none;
+border-bottom:#bbb 1px solid;
+margin:10px 0 30px;
+}
+
+.commentlist li {
+border-top:#bbb 1px solid;
+padding:0 0 10px;
+}
+
+.commentlist li.bypostauthor {
+background:#f3f3f3;
+border-top:#bbb 5px solid;
+}
+
+.comment_mod {
+margin:10px 0 0 10px;
+}
+
+.comment_mod em {
+background:#fff897;
+padding:1px 3px;
+}
+
+.comment_author {
+float:right;
+width:190px;
+margin:7px 0;
+}
+
+.comment_author img {
+float:left;
+margin:3px 12px 0 0;
+}
+
+.comment_author p {
+line-height:18px;
+}
+
+.comment_text {
+float:left;
+width:480px;
+margin:0 0 0 10px;
+}
+
+.comment_text p {
+line-height:18px;
+margin:7px 0;
+}
+
+.comment_text li {
+border-top:none;
+padding:0;
+}
+
+#commentform p {
+line-height:18px;
+margin:0 0 15px;
+}
+
+blockquote {
+background:url(images/quote.gif) no-repeat top left;
+min-height:50px;
+padding:0 0 0 60px;
+}
+
+#footer {
+font-size:11px;
+text-align:center;
+position:relative;
+margin:0 auto;
+padding:5px 0;
+}
+
+.clear {
+clear:both;
+}
+
+.warning p {
+background:url(images/warning.jpg) no-repeat left;
+height:380px;
+font-size:12px;
+margin:0 0 0 10px;
+padding:20px 0 0 90px;
+}
+
+img.wp-smiley {
+border:none;
+padding:0;
+}
+
+input:focus,textarea:focus {
+background:#ffc;
+}
+
+.wp-caption {
+border:1px solid #ddd;
+text-align:center;
+background:#f3f3f3;
+padding-top:4px;
+-khtml-border-radius:3px;
+margin:10px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+}
+
+.wp-caption img {
+border:0 none;
+margin:0;
+padding:0;
+}
+
+.wp-caption-dd {
+font-size:11px;
+line-height:17px;
+margin:0;
+padding:0 4px 5px;
+}
+
+img.aligncenter,.aligncenter {
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+img.alignleft {
+margin:0 10px 0 0;
+}
+
+img.alignright {
+margin:0 0 0 10px;
+}
+
+.alignleft {
+float:left;
+}
+
+.alignright {
+float:right;
+}
+
+#content .sticky h2 a {
+font-style:italic;
+color:#555;
+}
+
+#content .sticky p.comments {
+font-style:italic;
+}
+
+.group:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+* html .group,* html #nav ul li a {
+height:1%;
+}
+
+:first-child+html .group {
+min-height:1px;
+}
+
+* html #nav ul li a {
+display:inline;
+}
+
+a:hover,#headcontainer h1 a:hover,#container h1 a:hover,#content h2 a:hover,.comments a:hover,#content .sticky h2 a:hover {
+color:#c00;
+}
+
+#headcontainer h1 a,#container h1 a,#content h2 a {
+color:#222;
+text-decoration:none;
+}
+
+.navigation a,#footer a {
+color:#555;
+font-weight:bold;
+text-decoration:none;
+}
+
+.navigation a:hover,#footer a:hover {
+color:#333;
+text-decoration:none;
+}
+
+.main ul li,.main ol li,#sidebar ul li {
+margin:0 0 5px;
+}
+
+.updated,.comment_author small {
+font-size:11px;
+}
+
+#sidebar ul ul,#sidebar ul ul ul {
+margin:5px 0 0 10px;
+}
+
+p.logged,.comment_meta {
+font-size:12px;
+}
+
+#wp-calendar td a,#wp-calendar td a:hover {
+font-weight:bold;
+}
+
+abbr,.wp-caption a img,.wp-caption a:hover img {
+border:none;
+}
+
+*html #bubble,*html #bubble p {
+display:none;
+}
