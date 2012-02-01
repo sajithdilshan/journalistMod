@@ -602,8 +602,6 @@ clear:both;
 }
 
 .warning p {
-background:url(images/warning.gif) no-repeat left;
-height:160px;
 padding:20px 0 0 90px;
 font-size:20px;
 margin:0 0 0 10px;
