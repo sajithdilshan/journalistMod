@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Archive Page Templates
+Template Name: Custom-Archive
 */
 ?>
 <?php get_header(); ?>

@@ -102,8 +102,7 @@ $oddcomment = 'alt';
 <!--<p><small><strong>XHTML:</strong> You can use these tags: <?php echo allowed_tags(); ?></small></p>-->
 
 <p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
-<?php do_action('bwp_recaptcha_add_markups'); ?>
-<p></p>
+
 <p><input class="submit" name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" title="Please review your comment before submitting" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 </p>

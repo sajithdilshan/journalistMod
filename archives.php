@@ -14,9 +14,9 @@ Template Name: Archives
 
 <p>Complete archive of the blog's posts.</p>
 
-<h3>Yearly:</h3>
+<h3>Monthly:</h3>
 <ul>
-<?php wp_get_archives('type=yearly&show_post_count=10'); ?>
+<?php wp_get_archives('type=monthly&show_post_count=1'); ?>
 </ul>
 
 <h3>Topic:</h3>

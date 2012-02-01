@@ -5,16 +5,14 @@
 
 <div class="post hentry<?php if (function_exists('sticky_class')) { sticky_class(); } ?>">
 <h2 id="post-<?php the_ID(); ?>" class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-<p class="comments">
-<a class="updated" title="<?php the_time('Y-m-d\TH:i:s')?>"> Posted on <?php the_time('F jS, Y'); ?> <?php _e("at"); ?> <?php the_time('g:i a'); ?> with<a href="<?php comments_link(); ?>"><?php comments_number('zero comment','one comment','% comments'); ?></a> </a>
-</p>
+<p class="comments"><a href="<?php comments_link(); ?>"><?php comments_number('leave a comment','one comment','% comments'); ?></a></p>
 
 <div class="main entry-content group">
 	<?php the_content('Read the rest of this entry &raquo;'); ?>
 </div>
 
-
 </div><!-- END .hentry -->
+
 <?php if ( comments_open() ) comments_template(); ?>
 
 <?php endwhile; else: ?>
