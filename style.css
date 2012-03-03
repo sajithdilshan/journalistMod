@@ -2,37 +2,38 @@
 Theme Name: JournalistMod3
 Theme URI: http://code42.x10.com/journalistmod
 Description: JournalistMod is a minimal theme inspired by the Journalist theme by Lucian E. Marin.
-Version: 0.3
+Version: 0.4
 Author: Sajith Dilshan
 Tags: white, two columns, fixed width, light, minimal, microformats
 For the WordPress community (GPL), enjoy it guys.
 by Sajith Dilshan | http://code42.x10.com */
 
+@font-face {
+    font-family: 'MuseoSans300';
+    src: url('fonts/museosans-300-webfont.eot');
+    src: url('fonts/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museosans-300-webfont.woff') format('woff'),
+         url('fonts/museosans-300-webfont.ttf') format('truetype'),
+         url('fonts/museosans-300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-font-family:'Open Sans', Arial, serif;
+font-family:'MuseoSans300', Arial, serif;
 font-size:14px;
 color:#222;
-line-height:1.7em;
 background:#fff url(images/bg.png) repeat left top;
 -webkit-font-smoothing:antialiased;
 margin:0;
 padding:5px;
 }
 
-* {
-padding:2px;
-margin:0;
-}
+h1{ font-family: 'Iceberg', arial, serif; } 
 
+h2 { font-family: 'Amaranth', arial, serif; } 
 
-h1{ font-family: 'Open Sans Condensed', arial, serif; } 
-
-
-h2 { font-family: 'Open Sans', arial, serif; } 
-
- h3 { font-family: 'Delius', arial, serif; } 
-
-
+h3 { font-family: 'Delius', arial, serif; } 
 
 a {
 color:#047;
@@ -44,13 +45,15 @@ color:#c00;
 }
 
 #container {
-width:985px; /* this has nothing to do with the '911' event */
+width:985px; 
 margin:0 auto;
 position:relative;
 }
+
 /*======================================================================*/
+
 #container-nosidebar {
-width:750px; /* this has nothing to do with the '911' event */
+width:750px; 
 margin:0 auto;
 position:relative;
 }
@@ -74,34 +77,26 @@ text-decoration:none;
 color:#c00;
 }
 
-
 #search-page {
 top:5px;
 right:0;
 position:absolute;
 display:block;
 height:30px;
-/*background:url(images/bubble_right.gif) no-repeat right;
-*/}
+}
 
 #searchform-nosidebar {
 margin: 10px auto;
 padding: 0px;
-
 }
+
 #searchform-nosidebar input {
-/*background-color:#222;
-*/font-size:11px;
+font-size:11px;
 margin:2px 100px 0 0;
 padding:1px 4px 2px 4px;
-/*border:#888 1px solid;
-color:#eee;*/
 }
 
 #searchform-nosidebar input:hover {
-/*background-color:#333;
-border:#999 1px solid;
-color:#fff;*/
 cursor:pointer;
 }
 
@@ -118,7 +113,6 @@ width:150px;
 #searchform-nosidebar #s:hover {
 cursor:text;
 }
-
 
 /*==============================================================================*/
 
@@ -147,8 +141,7 @@ right:0;
 position:absolute;
 display:block;
 height:28px;
-/*background:url(images/bubble_right.gif) no-repeat right;
-*/}
+}
 
 #bubble p {
 display:block;
@@ -156,8 +149,7 @@ font-size:12px;
 color:#000;
 height:28px;
 padding:4px 12px 0 10px;
-/*background:url(images/bubble_left.gif) no-repeat top left;
-*/}
+}
 
 #content {
 float:left;
@@ -189,6 +181,7 @@ text-align:left;
 }
 
 .post {
+line-height:20px;
 -moz-background-clip:padding;
 -webkit-background-clip:padding-box;
 background:padding-box;
@@ -221,7 +214,6 @@ font-size:11px;
 text-decoration:none;
 padding:0 7px 5px 0;
 margin: 0 0 0 4px;
-
 }
 
 .comments a:hover {
@@ -279,30 +271,27 @@ margin:0 0 15px 0;
 
 .main ol,
 .main ul {
-list-style-type: none;
 line-height:18px;
 margin:0 0 15px 30px;
 }
 
 .main ul li,
 .main ol li {
-list-style-type: none;
 margin:0 0 5px 0;
 }
 
 .main ul li ul,
 .main ol li ol {
-list-style-type: none;
 margin:5px 0 5px 30px;
 }
 
 .meta {
 background:#f3f3f3 url(images/noise.png) repeat left top;
 font-size:11px;
-line-height:15px;
+line-height:11px;
 color:#333;
 padding:5px 10px;
-margin:0 0 30px 0;
+margin:0 0 15px 0;
 border:#bbb 1px solid;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
@@ -322,19 +311,18 @@ width:440px;
 }
 
 #sidebar {
-background:#f3f3f3 url(images/noise.png) repeat left top;
-font-size:12px;
+font-size:13px;
 float:right;
 width:190px;
--moz-box-shadow:0 0 8px #DDDDDD;
--webkit-box-shadow:0 0 8px #DDDDDD;
-box-shadow:0 0 8px #DDDDDD;
-text-shadow:0 1px 0 #eee;
-border-bottom:2px solid #dfdfd9;
-margin:0 0 20px;
-padding:0 5px 20px 10px;
--moz-border-radius:2px;
--webkit-border-radius:2px;
+color: #777;
+line-height:1.7em;
+text-shadow: 0 1px 0 #fff;
+}
+#sidebar a {
+color: #777;
+}
+#sidebar a:hover {
+border-bottom: 1px dotted #ccc;
 }
 
 #sidebar h3 {
@@ -344,18 +332,20 @@ margin:20px 0 5px 0;
 
 #sidebar ul {
 list-style:none;
+margin:5px 0 0 0;
+padding:0;
 }
 
 #sidebar ul ul {
-margin:5px 0 0 10px;
+margin:5px 0 0 0;
 }
 
 #sidebar ul ul ul {
-margin:5px 0 0 10px;
+margin:5px 0 0 0;
 }
 
 #sidebar ul li {
-margin:0 0 5px 0;
+margin:0 0 5px 0x;
 }
 
 #author h3 {
@@ -370,7 +360,6 @@ margin:15px 0 0 0;
 font-size:11px;
 margin:2px 0;
 padding:1px 4px 2px 4px;
-
 }
 
 #searchform input:hover {
@@ -689,7 +678,6 @@ color:#c00;
 #content .sticky p.comments {
 font-style:italic;
 }
-
 
 /* Self-clear floats */
 
