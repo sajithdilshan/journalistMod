@@ -4,9 +4,10 @@ Theme URI: http://code42.x10.com/journalistmod
 Description: JournalistMod is a minimal theme inspired by the Journalist theme by Lucian E. Marin.
 Version: 0.4
 Author: Sajith Dilshan
-Tags: white, two columns, fixed width, light, minimal, microformats
+Tags: white, two-columns, fixed-width, light, microformats
 For the WordPress community (GPL), enjoy it guys.
-by Sajith Dilshan | http://code42.x10.com */
+by Sajith Dilshan | http://code42.x10.com 
+*/
 
 @font-face {
     font-family: 'MuseoSans300';
@@ -20,20 +21,25 @@ by Sajith Dilshan | http://code42.x10.com */
 }
 
 body {
-font-family:'MuseoSans300', Arial, serif;
+background:#fff url(images/bg.png) repeat left top;
+font-family:'MuseoSans300',"Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
 font-size:14px;
 color:#222;
-background:#fff url(images/bg.png) repeat left top;
 -webkit-font-smoothing:antialiased;
+padding:0;
 margin:0;
-padding:5px;
+}
+
+* {
+padding:0;
+margin:0;
 }
 
 h1{ font-family: 'Iceberg', arial, serif; } 
 
 h2 { font-family: 'Amaranth', arial, serif; } 
 
-h3 { font-family: 'Delius', arial, serif; } 
+h3 { font-family: 'Delius', arial, serif; }
 
 a {
 color:#047;
@@ -41,8 +47,9 @@ text-decoration:none;
 }
 
 a:hover {
-color:#c00;
+color:#6699CC;
 }
+
 
 #container {
 width:985px; 
@@ -50,80 +57,12 @@ margin:0 auto;
 position:relative;
 }
 
-/*======================================================================*/
-
-#container-nosidebar {
-width:750px; 
-margin:0 auto;
-position:relative;
-}
-
-#container-nosidebar h1 {
-font-size:50px;
-font-weight:bold;
-letter-spacing:-1px;
-text-shadow:0 2px 1px #fff;
-width:985px;
-margin:0 auto;
-padding:32px 0 25px;
-}
-
-#container-nosidebar h1 a {
-color:#222;
-text-decoration:none;
-}
-
-#container-nosidebar h1 a:hover {
-color:#c00;
-}
-
-#search-page {
-top:5px;
-right:0;
-position:absolute;
-display:block;
-height:30px;
-}
-
-#searchform-nosidebar {
-margin: 10px auto;
-padding: 0px;
-}
-
-#searchform-nosidebar input {
-font-size:11px;
-margin:2px 100px 0 0;
-padding:1px 4px 2px 4px;
-}
-
-#searchform-nosidebar input:hover {
-cursor:pointer;
-}
-
-#searchform-nosidebar #s {
-background-color:#f6f6f6;
-font-size:11px;
-margin:2px 0;
-padding:2px 4px;
-border:#aaa 1px solid;
-color:#222;
-width:150px;
-}
-
-#searchform-nosidebar #s:hover {
-cursor:text;
-}
-
-/*==============================================================================*/
-
 #container h1 {
-font-size:50px;
+font-size:40px;
 font-weight:bold;
 letter-spacing:-1px;
-text-shadow:0 2px 1px #fff;
-width:985px;
-margin:0 auto;
-padding:32px 0 25px;
+width:600px;
+padding:32px 0 25px 0;
 }
 
 #container h1 a {
@@ -132,7 +71,7 @@ text-decoration:none;
 }
 
 #container h1 a:hover {
-color:#c00;
+color:#6699CC;
 }
 
 #bubble {
@@ -141,14 +80,16 @@ right:0;
 position:absolute;
 display:block;
 height:28px;
+/*background:url(images/bubble_right.gif) no-repeat right;*/
 }
 
 #bubble p {
 display:block;
-font-size:12px;
-color:#000;
+font-size:11px;
+color:#fff;
 height:28px;
 padding:4px 12px 0 10px;
+/*background:url(images/bubble_left.gif) no-repeat top left;*/
 }
 
 #content {
@@ -158,7 +99,7 @@ width:750px;
 
 #content h2 {
 font-size:25px;
-margin:5px 0 4px 0;
+margin:5px 0 7px 0;
 }
 
 #content h2 a {
@@ -167,7 +108,7 @@ text-decoration:none;
 }
 
 #content h2 a:hover {
-color:#c00;
+color:#6699CC;
 }
 
 #content h2.archive {
@@ -217,7 +158,7 @@ margin: 0 0 0 4px;
 }
 
 .comments a:hover {
-color:#c00;
+color:6699CC;
 }
 
 .navigation {
@@ -249,7 +190,7 @@ text-decoration:none;
 }
 
 .navigation a:hover {
-color:#333;
+color:#6699CC;
 text-decoration:none;
 }
 
@@ -288,7 +229,7 @@ margin:5px 0 5px 30px;
 .meta {
 background:#f3f3f3 url(images/noise.png) repeat left top;
 font-size:11px;
-line-height:11px;
+line-height:15px;
 color:#333;
 padding:5px 10px;
 margin:0 0 15px 0;
@@ -318,9 +259,11 @@ color: #777;
 line-height:1.7em;
 text-shadow: 0 1px 0 #fff;
 }
+
 #sidebar a {
 color: #777;
 }
+
 #sidebar a:hover {
 border-bottom: 1px dotted #ccc;
 }
@@ -332,20 +275,18 @@ margin:20px 0 5px 0;
 
 #sidebar ul {
 list-style:none;
-margin:5px 0 0 0;
-padding:0;
 }
 
 #sidebar ul ul {
-margin:5px 0 0 0;
+margin:5px 0 0 10px;
 }
 
 #sidebar ul ul ul {
-margin:5px 0 0 0;
+margin:5px 0 0 10px;
 }
 
 #sidebar ul li {
-margin:0 0 5px 0x;
+padding:0 0 5px 0;
 }
 
 #author h3 {
@@ -367,7 +308,7 @@ cursor:pointer;
 }
 
 #searchform #s {
-background-color:#f6f6f6;
+background:#f6f6f6;
 font-size:11px;
 margin:2px 0;
 padding:2px 4px;
@@ -380,7 +321,7 @@ cursor:text;
 }
 
 input.searchfield {
-background-color:#f6f6f6;
+background:#f6f6f6;
 font-size:11px;
 display:block;
 margin:5px 0 8px 0;
@@ -390,7 +331,7 @@ color:#222;
 }
 
 input.searchfield:hover {
-background-color:#eee;
+background:#eee;
 color:#222;
 }
 
@@ -441,7 +382,7 @@ border-color:#9cabb6;
 }
 
 input.subcom {
-background-color:#eee;
+background:#eee;
 font-size:11px;
 margin:0 0 10px 0;
 padding:1px 4px 2px 4px;
@@ -450,27 +391,35 @@ color:#222;
 }
 
 input.subcom:hover {
-background-color:#222;
+background:#222;
 cursor:pointer;
 border:#888 1px solid;
 color:#eee;
 }
 
 input.comment {
-background-color:#f6f6f6;
+background:#f6f6f6;
 font-size:11px;
 padding:2px 4px;
 border:#aaa 1px solid;
 color:#222;
 }
 
+input.comment:hover {
+border:#c00 1px solid;
+}
+
 textarea {
-background-color:#f6f6f6;
+background:#f6f6f6;
 font-size:12px;
 width:400px;
 padding:2px 4px;
 border:#aaa 1px solid;
 color:#222;
+}
+
+textarea:hover {
+border:#c00 1px solid;
 }
 
 .postinput small {
@@ -504,8 +453,8 @@ padding:0 0 10px 0;
 }
 
 .commentlist li.bypostauthor {
-background-color:#f3f3f3;
 border-top:#bbb 5px solid;
+background-color:#f3f3f3;
 }
 
 .comment_mod {
@@ -518,18 +467,18 @@ padding:1px 3px;
 }
 
 .comment_author {
-margin:7px 0;
+margin:10px 0;
 float:right;
 width:190px;
 }
 
 .comment_author img {
 float:left;
-margin:3px 12px 0 0;
+margin:5px 12px 0 0;
 }
 
 .comment_author p {
-line-height:18px;
+line-height:20px;
 }
 
 .comment_author small {
@@ -538,18 +487,13 @@ font-size:11px;
 
 .comment_text {
 float:left;
-width:480px;
+width:470px;
 margin:0 0 0 10px;
 }
 
 .comment_text p {
 line-height:18px;
 margin:7px 0;
-}
-
-.comment_text li {
-border-top:none;
-padding:0;
 }
 
 .comment_meta {
@@ -582,7 +526,7 @@ text-decoration:none;
 }
 
 #footer a:hover {
-color:#333;
+color:#6699CC;
 text-decoration:none;
 }
 
@@ -596,17 +540,55 @@ font-size:20px;
 margin:0 0 0 10px;
 }
 
+#wp-calendar {
+padding:10px 0 0 0;
+font-size:12px;
+}
+
+#wp-calendar caption {
+text-align:left;
+padding:0 0 5px 0;
+}
+
+#wp-calendar tr th,
+#wp-calendar tr td {
+padding:0 6px 0 0 ;
+text-align:right;
+}
+
+#wp-calendar td a {
+font-weight:bold;
+}
+
+#wp-calendar td a:hover {
+font-weight:bold;
+}
+
 img.wp-smiley {
 padding:0;
 border:none;
+}
+
+input:focus, textarea:focus{
+background-color:#ffc;
 }
 
 abbr {
 border:none;
 }
 
-input:focus, textarea:focus {
-background-color:#ffc;
+.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.alignleft {
+float:left;
+}
+
+.alignright {
+float:right;
 }
 
 .wp-caption {
@@ -627,14 +609,6 @@ padding:0;
 border:0 none;
 }
 
-.wp-caption a img {
-border: none;
-}
-
-.wp-caption a:hover img {
-border: none;
-}
-
 .wp-caption-dd {
 font-size:11px;
 line-height:17px;
@@ -642,44 +616,7 @@ padding:0 4px 5px;
 margin:0;
 }
 
-img.aligncenter, .aligncenter {
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
-
-img.alignleft {
-margin: 0 10px 0 0;
-}
-
-img.alignright {
-margin: 0 0 0 10px;
-}
-
-.alignleft {
-float:left;
-}
-
-.alignright {
-float:right;
-}
-
-/* Sticky */
-
-#content .sticky h2 a {
-font-style:italic;
-color:#555;
-}
-
-#content .sticky h2 a:hover {
-color:#c00;
-}
-
-#content .sticky p.comments {
-font-style:italic;
-}
-
-/* Self-clear floats */
+/* self-clear floats */
 
 .group:after {
 content: "."; 

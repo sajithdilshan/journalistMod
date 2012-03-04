@@ -44,11 +44,11 @@ $oddcomment = 'alt';
 	<?php comment_text() ?>
 	</div>
 	
-	<div class="comment_author vcard">
+	<div class="comment_author">
 	<?php if (function_exists('get_avatar')) { ?>
 	<?php echo get_avatar(get_comment_author_email(), '32'); ?>
 	<?php } ?>
-	<p><strong class="fn"><?php comment_author_link() ?></strong></p>
+	<p><strong><?php comment_author_link() ?></strong></p>
 	<p><small><?php comment_date('j M y') ?> at <a href="#comment-<?php comment_ID() ?>"><?php comment_time() ?></a> <? edit_comment_link(__('Edit', 'sandbox'), ' ', ''); ?></small></p>
 	</div>
 	<div class="clear"></div>

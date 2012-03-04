@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
-<div id="content">
+<div id="content" class="group">
 <?php if (have_posts()) : ?>
 
 <h2 class="archive">Search Results</h2>
 
 <?php while (have_posts()) : the_post(); ?>
+
 <div class="post hentry<?php if (function_exists('sticky_class')) { sticky_class(); } ?>">
 <h2 id="post-<?php the_ID(); ?>" class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 <p class="comments"><a href="<?php comments_link(); ?>"><?php comments_number('leave a comment','one comment','% comments'); ?></a></p>
